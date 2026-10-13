@@ -1,0 +1,110 @@
+{
+ "allow_guest": 0,
+ "blocks": [
+  {
+   "baseStyles": {
+    "alignItems": "center",
+    "display": "flex",
+    "flexDirection": "column",
+    "flexShrink": 0,
+    "flexWrap": "wrap",
+    "overflowX": "hidden",
+    "width": "inherit"
+   },
+   "blockName": "div",
+   "children": [
+    {
+     "baseStyles": {
+      "flexGrow": 1
+     },
+     "blockName": "Container",
+     "children": [
+      {
+       "blockName": "AppHeader",
+       "componentId": "AppHeader-pwmpycf",
+       "componentName": "AppHeader",
+       "componentProps": {
+        "hideBackBtn": true,
+        "logoSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-audio-lines\"><path d=\"M2 10v3\"/><path d=\"M6 6v11\"/><path d=\"M10 3v18\"/><path d=\"M14 8v7\"/><path d=\"M18 5v13\"/><path d=\"M22 10v3\"/></svg>",
+        "title": "Frappe Beats"
+       },
+       "componentSlots": {},
+       "isCustomVueComponent": true
+      },
+      {
+       "blockName": "CardList",
+       "componentId": "CardList-s29byq7",
+       "componentName": "CardList",
+       "componentProps": {
+        "cards": "{{ liked_songs.data }}",
+        "rowKey": "name",
+        "title": ""
+       },
+       "componentSlots": {},
+       "isCustomVueComponent": true
+      },
+      {
+       "blockName": "BottomTabs",
+       "componentId": "BottomTabs-6yov7qm",
+       "componentName": "BottomTabs",
+       "componentProps": {
+        "tabs": [
+         {
+          "icon": "lucide-activity",
+          "label": "Discover",
+          "route": "/discover"
+         },
+         {
+          "icon": "lucide-heart",
+          "label": "Favourites",
+          "route": "/favourites"
+         }
+        ]
+       },
+       "componentSlots": {},
+       "isCustomVueComponent": true
+      }
+     ],
+     "componentId": "Container-zc1m3h0",
+     "componentName": "Container",
+     "componentProps": {},
+     "componentSlots": {}
+    }
+   ],
+   "componentId": "root",
+   "componentName": "div",
+   "componentProps": {},
+   "componentSlots": {},
+   "originalElement": "body"
+  }
+ ],
+ "creation": "2024-10-03 13:26:26.011461",
+ "docstatus": 0,
+ "doctype": "Studio Page",
+ "frappe_app": "music",
+ "idx": 0,
+ "is_standard": 1,
+ "modified": "2026-10-13 11:08:15.596692",
+ "modified_by": "Administrator",
+ "name": "favourites",
+ "owner": "Administrator",
+ "page_name": "page-84655900",
+ "page_title": "Favourites",
+ "published": 1,
+ "resources": [
+  {
+   "auto": 1,
+   "document_type": "Song",
+   "fetch_document_using_filters": 0,
+   "fields": "[\"title\",\"artist\",\"duration\",\"route\",\"cover_image\",\"music_file\",\"is_liked\",\"name\"]",
+   "filters": "{\"is_liked\":[\"=\",1]}",
+   "limit": 0,
+   "method": "GET",
+   "resource_name": "liked_songs",
+   "resource_type": "Document List",
+   "transform": "function transform(data) { \n\treturn data.map((row) => {\n\t    row.subtitle = `${row.artist} ${row.duration}`\n\t    row.imageURL = row.cover_image\n\t    row.route = `/song/${row.name}`\n\t    return row\n\t}) \n}"
+  }
+ ],
+ "route": "/favourites",
+ "studio_app": "beats"
+}

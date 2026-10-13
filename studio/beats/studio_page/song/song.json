@@ -1,0 +1,337 @@
+{
+ "_user_tags": "migrated-espresso-text-sizes-v2",
+ "allow_guest": 0,
+ "blocks": [
+  {
+   "baseStyles": {
+    "alignItems": "center",
+    "display": "flex",
+    "flexDirection": "column",
+    "flexShrink": 0,
+    "flexWrap": "wrap",
+    "overflowX": "hidden",
+    "width": "inherit"
+   },
+   "blockName": "div",
+   "children": [
+    {
+     "baseStyles": {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "flexGrow": 0,
+      "gridTemplateColumns": "repeat(2, minmax(200px, 1fr))",
+      "justifyContent": "flex-start",
+      "paddingBottom": "20px",
+      "paddingLeft": "0px",
+      "paddingRight": "0px",
+      "paddingTop": "0px"
+     },
+     "blockName": "Container",
+     "children": [
+      {
+       "blockName": "AppHeader",
+       "componentId": "AppHeader-ms0shew",
+       "componentName": "AppHeader",
+       "componentProps": {
+        "logoSVG": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-audio-lines\"><path d=\"M2 10v3\"/><path d=\"M6 6v11\"/><path d=\"M10 3v18\"/><path d=\"M14 8v7\"/><path d=\"M18 5v13\"/><path d=\"M22 10v3\"/></svg>",
+        "title": "Frappe Beats"
+       },
+       "componentSlots": {},
+       "isCustomVueComponent": true
+      },
+      {
+       "baseStyles": {
+        "flexGrow": 1,
+        "overflowX": "auto",
+        "width": "100%"
+       },
+       "blockName": "FitContainer",
+       "children": [
+        {
+         "baseStyles": {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "gridTemplateColumns": "repeat(2, minmax(200px, 1fr))",
+          "justifyContent": "center",
+          "paddingBottom": "30px",
+          "paddingLeft": "30px",
+          "paddingRight": "30px",
+          "paddingTop": "50px",
+          "width": "100%"
+         },
+         "blockName": "FitContainer",
+         "children": [
+          {
+           "baseStyles": {
+            "height": "430px",
+            "width": "428px"
+           },
+           "blockName": "ImageView",
+           "componentId": "ImageView-4ftg5qw",
+           "componentName": "ImageView",
+           "componentProps": {
+            "alt": "",
+            "image": "{{ dynamicSong.doc.cover_image }}",
+            "shape": "square",
+            "size": "lg"
+           },
+           "componentSlots": {}
+          }
+         ],
+         "componentId": "FitContainer-34pa2fk",
+         "componentName": "container",
+         "componentProps": {},
+         "componentSlots": {},
+         "originalElement": "div"
+        },
+        {
+         "baseStyles": {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "gap": "10px",
+          "gridTemplateColumns": "repeat(2, minmax(200px, 1fr))",
+          "justifyContent": "center",
+          "padding": "20px",
+          "width": "100%"
+         },
+         "blockName": "FitContainer",
+         "children": [
+          {
+           "baseStyles": {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+            "gridTemplateColumns": "repeat(2, minmax(200px, 1fr))",
+            "justifyContent": "center"
+           },
+           "blockName": "FitContainer",
+           "children": [
+            {
+             "blockName": "TextBlock",
+             "classes": [
+              "font-bold",
+              "text-gray-800"
+             ],
+             "componentId": "TextBlock-z4udamp",
+             "componentName": "TextBlock",
+             "componentProps": {
+              "fontSize": "text-4xl",
+              "fontWeight": "font-bold",
+              "text": "{{ dynamicSong.doc.title }}",
+              "textColor": "text-gray-800"
+             },
+             "componentSlots": {}
+            },
+            {
+             "blockName": "TextBlock",
+             "classes": [
+              "text-gray-700",
+              "font-normal"
+             ],
+             "componentId": "TextBlock-r20kwke",
+             "componentName": "TextBlock",
+             "componentProps": {
+              "fontSize": "text-lg",
+              "fontWeight": "font-normal",
+              "text": "{{ dynamicSong.doc.artist }}",
+              "textColor": "text-gray-700"
+             },
+             "componentSlots": {}
+            }
+           ],
+           "componentId": "FitContainer-lj75nln",
+           "componentName": "container",
+           "componentProps": {},
+           "componentSlots": {},
+           "originalElement": "div"
+          }
+         ],
+         "componentId": "FitContainer-dyzo8lo",
+         "componentName": "container",
+         "componentProps": {},
+         "componentSlots": {},
+         "originalElement": "div"
+        },
+        {
+         "baseStyles": {
+          "padding": "20px",
+          "width": "100%"
+         },
+         "blockName": "FitContainer",
+         "children": [
+          {
+           "blockName": "Audio",
+           "componentId": "Audio-4gg2pik",
+           "componentName": "Audio",
+           "componentProps": {
+            "file": "{{ dynamicSong.doc.music_file }}"
+           },
+           "componentSlots": {},
+           "isCustomVueComponent": true
+          }
+         ],
+         "componentId": "FitContainer-1j7u06w",
+         "componentName": "container",
+         "componentProps": {},
+         "componentSlots": {},
+         "originalElement": "div"
+        },
+        {
+         "baseStyles": {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "gap": "10px",
+          "gridTemplateColumns": "repeat(2, minmax(200px, 1fr))",
+          "justifyContent": "space-between",
+          "padding": "20px",
+          "width": "100%"
+         },
+         "blockName": "FitContainer",
+         "children": [
+          {
+           "blockName": "FeatherIcon",
+           "componentId": "FeatherIcon-elovgrq",
+           "componentName": "Icon",
+           "componentProps": {
+            "class": "h-6 w-6",
+            "icon": "lucide-pocket"
+           },
+           "componentSlots": {}
+          },
+          {
+           "baseStyles": {
+            "color": "{{ dynamicSong.doc.is_liked ? \"red\" : \"currentColor\" }}"
+           },
+           "blockName": "FeatherIcon",
+           "componentEvents": {
+            "click": {
+             "action": "Run Script",
+             "event": "click",
+             "oldEvent": "click",
+             "script": "dynamicSong.like_song.submit()"
+            }
+           },
+           "componentId": "FeatherIcon-bp8m6xi",
+           "componentName": "Icon",
+           "componentProps": {
+            "class": "h-6 w-6",
+            "icon": "lucide-heart"
+           },
+           "componentSlots": {}
+          }
+         ],
+         "componentId": "FitContainer-wxni2r4",
+         "componentName": "container",
+         "componentProps": {},
+         "componentSlots": {},
+         "originalElement": "div"
+        },
+        {
+         "baseStyles": {
+          "display": "flex",
+          "flexDirection": "row",
+          "gap": "10px",
+          "gridTemplateColumns": "repeat(2, minmax(200px, 1fr))",
+          "justifyContent": "space-around",
+          "marginBottom": "63px",
+          "marginTop": "34px",
+          "width": "100%"
+         },
+         "blockName": "FitContainer",
+         "children": [
+          {
+           "blockName": "Button",
+           "componentId": "Button-zlwdsey",
+           "componentName": "Button",
+           "componentProps": {
+            "label": "UP NEXT",
+            "size": "sm",
+            "theme": "gray",
+            "variant": "outline"
+           },
+           "componentSlots": {}
+          },
+          {
+           "blockName": "Button",
+           "componentId": "Button-dcnw5xg",
+           "componentName": "Button",
+           "componentProps": {
+            "label": "LYRICS",
+            "theme": "gray",
+            "variant": "outline"
+           },
+           "componentSlots": {}
+          },
+          {
+           "blockName": "Button",
+           "componentId": "Button-n0xiw2b",
+           "componentName": "Button",
+           "componentProps": {
+            "label": "RELATED",
+            "variant": "outline"
+           },
+           "componentSlots": {}
+          }
+         ],
+         "componentId": "FitContainer-9z4ajxt",
+         "componentName": "container",
+         "componentProps": {},
+         "componentSlots": {},
+         "originalElement": "div"
+        }
+       ],
+       "componentId": "FitContainer-tvquef0",
+       "componentName": "container",
+       "componentProps": {},
+       "componentSlots": {},
+       "originalElement": "div"
+      }
+     ],
+     "componentId": "Container-iwm6qd5",
+     "componentName": "Container",
+     "componentProps": {},
+     "componentSlots": {}
+    }
+   ],
+   "componentId": "root",
+   "componentName": "div",
+   "componentProps": {},
+   "componentSlots": {},
+   "originalElement": "body"
+  }
+ ],
+ "creation": "2024-10-03 13:25:58.345072",
+ "docstatus": 0,
+ "doctype": "Studio Page",
+ "frappe_app": "music",
+ "idx": 0,
+ "is_standard": 1,
+ "modified": "2026-10-13 11:06:16.969868",
+ "modified_by": "Administrator",
+ "name": "song",
+ "owner": "Administrator",
+ "page_name": "page-feb11449",
+ "page_title": "Song",
+ "published": 1,
+ "resources": [
+  {
+   "auto": 1,
+   "document_type": "Song",
+   "fetch_document_using_filters": 1,
+   "fields": "[]",
+   "filters": "{\"name\":[\"=\",\"{{ route.params.name }}\"]}",
+   "limit": 0,
+   "method": "GET",
+   "resource_name": "dynamicSong",
+   "resource_type": "Document",
+   "transform": "function transform(doc) { \n\treturn doc; \n}",
+   "whitelisted_methods": "[\"like_song\"]"
+  }
+ ],
+ "route": "/song/:name",
+ "studio_app": "beats"
+}
