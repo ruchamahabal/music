@@ -1,6 +1,6 @@
 <template>
 	<nav
-		class="fixed bottom-0 z-[1000] h-15 w-full border-t border-outline-elevation-2 bg-surface-base shadow-lg"
+		class="fixed inset-x-0 bottom-0 z-[1000] h-15 w-full border-t border-outline-elevation-2 bg-surface-base shadow-lg"
 	>
 		<div class="flex items-center justify-around">
 			<router-link

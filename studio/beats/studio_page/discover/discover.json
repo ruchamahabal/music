@@ -15,7 +15,12 @@
    "children": [
     {
      "baseStyles": {
-      "flexGrow": 1
+      "display": "flex",
+      "flexDirection": "column",
+      "flexGrow": 1,
+      "flexShrink": 0,
+      "height": "100vh",
+      "width": "100%"
      },
      "blockName": "Container",
      "children": [
@@ -66,9 +71,10 @@
       }
      ],
      "componentId": "Container-zc1m3h0",
-     "componentName": "Container",
+     "componentName": "container",
      "componentProps": {},
-     "componentSlots": {}
+     "componentSlots": {},
+     "originalElement": "div"
     }
    ],
    "componentId": "root",
@@ -84,7 +90,7 @@
  "frappe_app": "music",
  "idx": 0,
  "is_standard": 1,
- "modified": "2026-10-13 11:08:15.667018",
+ "modified": "2026-10-13 11:30:28.484414",
  "modified_by": "Administrator",
  "name": "discover",
  "owner": "Administrator",
